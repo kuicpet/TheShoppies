@@ -1,9 +1,13 @@
+import apiKey from "./config";
+
 // DOM
 const copyRight = document.querySelector(".copyright");
 const searchBtn = document.querySelector(".searchBtn");
 const searchInput = document.querySelector(".search");
 const errorMessage = document.querySelector(".error");
 
+
+const url = `www.omdbapi.com/?t=${searchInput.value}s&apikey=${apiKey}`
 // Search for Movies
 function searchMovies() {
     if(searchInput.value === ""){
@@ -12,6 +16,7 @@ function searchMovies() {
     } else {
         searchInput.style.border = "2px solid #004c3f";
         errorMessage.style.display = "none";
+        fetch(url).then(response => response.json()).then(data => console.log(data))
         console.log(searchInput.value);
     }
 }

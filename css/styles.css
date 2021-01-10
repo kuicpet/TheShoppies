@@ -34,6 +34,7 @@ h1 {
 h2 {
     font-weight: lighter;
     color: #004c3f;
+    margin: 0.5rem;
 }
 .search_container {
     width: 80%;
@@ -81,10 +82,40 @@ h2 {
     display: flex;
     align-items: center;
     justify-content: center;
+    margin: 1rem;
+}
+.results span {
+    padding: 1rem;
+}
+.result {
+    margin: 0.5rem 0;
 }
 .favorites {
-    border: 2px solid blue;
+    border: 2px solid #004c3f;
     padding: 1.5rem;
+}
+.nominate {
+    border: 1px solid #004c3f;
+    padding: 0.2rem 1rem;
+    background: transparent;
+    color: #004c3f;
+}
+.nominate:hover {
+    background: #004c3f;
+    color: #ffffff;
+}
+.remove {
+    border: 1px solid red;
+    padding: 0.2rem 1rem;
+    background: transparent;
+    color: red;
+}
+.remove:hover {
+    background-color: red;
+    color: #ffffff;
+}
+.movie_title {
+    font-weight: bold;
 }
 footer {
     display: flex;
@@ -92,4 +123,12 @@ footer {
     bottom: 0;
     padding: 1rem;
     color: #004c3f;
+}
+@media only screen and (max-width: 799px ) {
+    .results_container {
+        grid-template-columns: repeat(1,1fr);
+    }
+   .results span {
+       padding: 0.4rem;
+   }
 }
