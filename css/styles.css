@@ -31,6 +31,10 @@ h1 {
     color: #004c3f;
     text-align: justify;
 }
+h2 {
+    font-weight: lighter;
+    color: #004c3f;
+}
 .search_container {
     width: 80%;
 }
@@ -59,6 +63,28 @@ h1 {
 .searchBtn:hover {
     background-color: #004c3f;
     color: #ffffff;
+}
+.results_container {
+    display: grid;
+    width: 80%;
+    grid-template-columns: repeat(2,1fr);
+    gap: 1.5rem;
+    margin: 1rem;
+    height: auto;
+}
+.search_results {
+    border: 2px solid #004c3f;
+    padding: 1.5rem;
+}
+.results {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.favorites {
+    border: 2px solid blue;
+    padding: 1.5rem;
 }
 footer {
     display: flex;
