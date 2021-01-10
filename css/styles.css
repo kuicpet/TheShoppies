@@ -74,6 +74,7 @@ h2 {
     height: auto;
 }
 .search_results {
+    width: 100%;
     border: 2px solid #004c3f;
     padding: 1.5rem;
 }
@@ -85,10 +86,14 @@ h2 {
     margin: 1rem;
 }
 .results span {
-    padding: 1rem;
+    padding: 0.1rem;
 }
 .result {
     margin: 0.5rem 0;
+}
+.result {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
 }
 .favorites {
     border: 2px solid #004c3f;
@@ -99,6 +104,7 @@ h2 {
     padding: 0.2rem 1rem;
     background: transparent;
     color: #004c3f;
+    height: 2rem;
 }
 .nominate:hover {
     background: #004c3f;
@@ -116,6 +122,10 @@ h2 {
 }
 .movie_title {
     font-weight: bold;
+    text-align: justify;
+}
+.year {
+    text-align: center;
 }
 footer {
     display: flex;
