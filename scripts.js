@@ -30,6 +30,7 @@ function searchMovies() {
         })
         .then(data => {
             const { Title, Year } = data;
+            // save data to localstorage
             console.log(data);
             const li = document.createElement("li");
             li.classList.add("result");
