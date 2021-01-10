@@ -1,1 +1,3 @@
-export const apiKey = "922f820f"
+const config = {
+    API_KEY: "922f820f"
+}
