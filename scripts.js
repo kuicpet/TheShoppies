@@ -19,7 +19,7 @@ function searchMovies() {
         searchInput.style.border = "2px solid #004c3f";
         errorMessage.style.display = "none";
         console.log(searchInput.value)
-        let url = `http://www.omdbapi.com/?t=${searchInput.value}&apikey=${apiKey}`;
+        let url = `http://www.omdbapi.com/?s=${searchInput.value}&apikey=${apiKey}`;
         fetch(url)
         .then(response => {
             if(response.ok){
@@ -30,7 +30,6 @@ function searchMovies() {
         })
         .then(data => {
             const { Title, Year } = data;
-            // save data to localstorage
             console.log(data);
             const li = document.createElement("li");
             li.classList.add("result");
@@ -41,7 +40,6 @@ function searchMovies() {
             `;
             li.innerHTML = markup;
             searchResults.appendChild(li);
-
         })
         .catch(error => console.warn(error));
         searchInput.focus();
