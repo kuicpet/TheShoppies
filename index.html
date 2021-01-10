@@ -10,14 +10,21 @@
     </head>
     <body>
         <main>
+            <section class="shoppies">
+                <div>
+                    <h1>The Shoppies</h1>
+                </div>
+            </section>
             <section class="search_container">
-                <p>The Shoppies</p>
                 <form>
                     <div>
                         <label for="search"></label>
-                        <input type="text" class="search">
-                        <button>Search</button>
+                        <input type="text" class="search" placeholder="Search movies ...">
+                        <div class="error hide">
+                            <small>Please enter a movie title</small>
+                        </div>
                     </div>
+                    <button class="searchBtn" type="submit">Search</button>
                 </form>
             </section>
         </main>

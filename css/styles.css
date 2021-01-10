@@ -23,13 +23,42 @@ main {
     align-items: center;
     text-transform: capitalize;
     margin: 2rem;
-    background-color: lightgrey;
     width: 100%;
     min-height: 100vh;
 }
+h1 {
+    font-weight: lighter;
+    color: #004c3f;
+    text-align: justify;
+}
 .search_container {
-    background-color: white;
     width: 80%;
+}
+.search {
+    width: 500px;
+    max-width: 90%;
+    height: 2rem;
+    padding: 6px;
+    border: 2px solid #004c3f;
+}
+.error {
+    color: red;
+    margin: 0.3rem;
+}
+.hide {
+    display: none;
+}
+.searchBtn {
+    margin: 0.5rem;
+    font-size: large;
+    padding: 0.2rem 1.5rem;
+    color: #004c3f;
+    border: 2px solid #004c3f;
+    background: transparent;
+}
+.searchBtn:hover {
+    background-color: #004c3f;
+    color: #ffffff;
 }
 footer {
     display: flex;
