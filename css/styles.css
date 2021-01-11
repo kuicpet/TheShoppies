@@ -9,6 +9,7 @@ html {
 }
 body {
     display: flex;
+    flex-direction: column;
     width: 100%;
     height: auto;
     line-height: 1.5;
@@ -78,6 +79,11 @@ h2 {
     border: 2px solid #004c3f;
     padding: 1.5rem;
 }
+.search_query {
+    margin: 0.1rem;
+    font-weight: bold;
+    text-align: justify;
+}
 .results {
     position: relative;
     display: flex;
@@ -105,6 +111,7 @@ h2 {
     background: transparent;
     color: #004c3f;
     height: 2rem;
+    margin: 0.5rem;
 }
 .nominate:hover {
     background: #004c3f;
@@ -128,11 +135,30 @@ h2 {
     text-align: center;
 }
 footer {
-    display: flex;
-    position: absolute;
-    bottom: 0;
     padding: 1rem;
     color: #004c3f;
+}
+/**Spinner*/
+.loader {
+    visibility: hidden;
+    width: 2rem;
+    height: 2rem;
+    border: 2px solid #ffffff;
+    border-top: 3px solid #004c3f;
+    border-radius: 100%;
+    margin: auto;
+    animation: spin 1s infinite linear;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    } to {
+        transform: rotate(360deg);
+    }
+}
+.loader.show {
+    visibility: visible;
 }
 @media only screen and (max-width: 799px ) {
     .results_container {
