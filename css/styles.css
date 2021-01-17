@@ -79,6 +79,10 @@ h2 {
     border: 2px solid #004c3f;
     padding: 1.5rem;
 }
+.query {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
 .search_query {
     margin: 0.1rem;
     font-weight: bold;
@@ -110,8 +114,9 @@ h2 {
     padding: 0.2rem 1rem;
     background: transparent;
     color: #004c3f;
+    text-transform: capitalize;
     height: 2rem;
-    margin: 0.5rem;
+    margin: 0 0.5rem;
 }
 .nominate:hover {
     background: #004c3f;
@@ -122,6 +127,8 @@ h2 {
     padding: 0.2rem 1rem;
     background: transparent;
     color: red;
+    height: 2rem;
+    margin: 0 0.5rem;
 }
 .remove:hover {
     background-color: red;
@@ -133,6 +140,21 @@ h2 {
 }
 .year {
     text-align: center;
+}
+.clear {
+    margin-left: auto;
+}
+.clearBtn {
+    border: 1px solid #004c3f;
+    background: transparent;
+    padding: 0.2rem 1rem;
+    text-transform: capitalize;
+    color: #004c3f;
+    font-weight: bold;
+}
+.clearBtn:hover {
+    color: #ffffff;
+    background-color: #004c3f;
 }
 footer {
     padding: 1rem;
